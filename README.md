@@ -1,15 +1,6 @@
-![Header](../../actions/workflows/py-header.yml/badge.svg)
-![Lint](../../actions/workflows/py-lint.yml/badge.svg)
-![Format](../../actions/workflows/py-format.yml/badge.svg)
+CSUF CPSC 386 Project
 
 # Bounce
-
-The objectives of this exercise are:
-
-* Use a heirarchy of objects to create a graphical demo using PyGame.
-* Understand the connection between a game object and a scene graph.
-* Use scene objects to build a linear scene graph.
-* Apply planar geometry and 2D vector mathematics to animate balls in a plane.
 
 The program we are creating is not quite a game. It introduces us to objects which we will use to create games. To gain experience working with these objects and Pygame we will make a toy application that is entertaining to watch.
 
@@ -201,33 +192,3 @@ To do this, first find the distance between the two balls. If the distance is le
 We're going to move one ball backwards by _half_delta_ and the other ball backwards by _half_delta_. Using the ball's velocity, scale the velocity vector to have it's length equivalent to _half_delta_ and update the ball's location.
 
 Keeping the balls separated when the ball dies is critical. If a ball dies and then is left overlapping or touching another ball, it will be stuck exploding.
-
-## Don't Forget
-
-Please remember that:
-
-* Don't forget to include a requirements.txt file.
-* Direct comparison of floating point values will not work corretly, use the Math library's [`isclose()`](https://docs.python.org/3/library/math.html?highlight=isclose#math.isclose) instead.
-* Use [Pygame's documentation](https://www.pygame.org/docs/) to help you complete this assignment.
-* You need to put a header in every file per the [instructions](https://docs.google.com/document/d/1OgC3_82oZHpTvoemGXu84FAdnshve4BCvtwaXZEJ9FY/edit?usp=sharing) shared in Canvas.
-* You need to follow [PEP-8](https://www.python.org/dev/peps/pep-0008/); use linters and style checkers such as `pycodestyle`, `pylint`, and `black`.
-* You need to test your program. If it does not run correctly or if it unplayable then your project will receive poor marks.
-
-# Rubric
-
-This exercise is worth 10 points. There is a total of 10 points possible. Your program must not have any syntax errors before it is graded. Submissions that have a syntax error or throw an uncaught exception will be assigned a score of 0.
-* Functionality (6 points): Your submission shall be assessed for the appropriate constructs and strategies to address the exercise. A program the passes the instructor's tests completely receives full marks. A program that partially passes the instructors tests receives partial-marks. A program that fails the majority or all the tests receives no marks.
-    * A program that is not defined in separate files using a Python package per the requirements looses 5 points.
-    * A project missing it's requirements.txt file looses 5 points.
-    * A program that does not have balls bouncing off walls looses 3 points.
-    * A program that does not have ball to ball bouncing looses 3 points.
-    * A program that does not have sound effects looses 2 points.
-    * A program that does not have a sound track looses 2 points.
-    * A program that does not have balls with a lifespan looses 2 points.
-    * A program that does not have scenes with soundtracks looses 2 points.
-    * A program that is missing a _scene_ looses 4 points per missing scene.
-    * A program that does not execute with the command `./bounce.py` looses 3 points.
-    * A project that does not have the required individual files looses 4 points.
-    * Partial implementation of the rules shall loose 1-5 points depending on the number of requirements not met.
-* Format & Readability (4 point): Your submission shall be assessed by checking whether your code passess the style and format check, as well as how well it follows the proper naming conventions, and internal documentation guidelines. Git log messages are an integral part of how readable your project is. Failure to include a header forfeits all marks. Not conforming to PEP-8 forfeits all marks.
-
